@@ -1,0 +1,50 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "公众号改写专家知识库",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Xiaofan001016/mm-gzhgx/main"
+    }
+  ],
+  "paths": {
+    "/Guide.md": {
+      "get": {
+        "operationId": "readGuide",
+        "summary": "知识库使用指南",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeChatRewriteSOP.md": {
+      "get": {
+        "operationId": "readWeChatRewriteSOP",
+        "summary": "公众号文章专业改写与赋能SOP V2.0",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
