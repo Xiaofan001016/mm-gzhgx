@@ -1,0 +1,140 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "公众号改写专家知识库",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Xiaofan001016/mm-gzhgx/main"
+    }
+  ],
+  "paths": {
+    "/Guide.md": {
+      "get": {
+        "operationId": "readGuide",
+        "summary": "知识库使用指南",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part1-RoleAndRules.md": {
+      "get": {
+        "operationId": "readPart1",
+        "summary": "角色定位与核心行为准则",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part2-IntroStep1.md": {
+      "get": {
+        "operationId": "readPart2",
+        "summary": "SOP开场白与步骤一：接收原文分析",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part3-Step2Step3.md": {
+      "get": {
+        "operationId": "readPart3",
+        "summary": "步骤二：目标受众 + 步骤三：改写策略方案",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part4-Step4.md": {
+      "get": {
+        "operationId": "readPart4",
+        "summary": "步骤四：爆款标题生成",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part5-Step5.md": {
+      "get": {
+        "operationId": "readPart5",
+        "summary": "步骤五：逐段精细化改写",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Part6-Step6Step7.md": {
+      "get": {
+        "operationId": "readPart6",
+        "summary": "步骤六：结尾转化引导 + 步骤七：最终确认",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
